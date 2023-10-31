@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1>Registration form</h1>
+
+  <p>Please fill out this form with the required information</p>
+
+  <form action="">
+      <fieldset>
+          <label for="email"> Your Email: <input type="email" id="email"></label>
+          <ul id="results"></ul>
+          <label for="password">Your password: <input type="password" id="password" required></label>
+      </fieldset>
+  </form>
+ 
+    <div class="btns">
+        <button class="clear">clear</button>
+        <button class="registr">регистрация</button>
+         <button class="login">войти</button>
+    </div>
+    <div class="text hidden"></div>
+
+    <div class="order-form hidden"></div>
+
+    <div class="order_message hidden"></div>
+
+    <div class="btn_container hidden">
+        <div class="btn_item"> 
+            <button class="pay_btn">Оплатить</button>
+            <div class="loading_pay loading hidden"></div>
+        </div>
+
+        <div class="btn_item">  
+            <button class="send_btn">Отправить</button>
+            <div class="loading_send loading hidden"></div>
+        </div>
+
+        <div class="btn_item">  
+            <button class="accept_btn">Принять</button>
+            <div class="loading_accept loading hidden"></div>
+        </div>
+
+        <div class="btn_item">  
+            <button class="complete_btn">Завершить заказ</button>
+            <div class="loading_complete loading hidden"></div>
+        </div>
+
+        <button class="out_btn">Выйти</button>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
